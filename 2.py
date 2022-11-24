@@ -1,0 +1,6 @@
+f = open('2.txt', encoding='UTF8')
+lines = f.readlines()
+print(lines)
+lines.sort(key=lambda x: x.count('а'), reverse=True)
+print(lines)
+f.close()
