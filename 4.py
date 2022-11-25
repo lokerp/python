@@ -1,23 +1,27 @@
 import os
 import re
 
-inputFileName = '4.txt'
-outputFileName = '4_4.txt'
+vhodnoi_file = '4.txt'
+vihodnoi_file = '4_4.txt'
 
-def checkFile(fileName):
-    if not (os.path.exists(fileName)):
-        print(f"Файла {fileName} не существует")
+def checkFile(file):
+    if not (os.path.exists(file)):
+        print(f"Файла {file} не существует")
         exit()
 
-checkFile(inputFileName)
-checkFile(outputFileName)
+checkFile(vhodnoi_file)
+checkFile(vihodnoi_file)
 
-with open(inputFileName, encoding = 'utf-8') as file:
+with open(vhodnoi_file, encoding = 'utf-8') as file:
     fileInfo = file.read()
 
-chapters = [chapter.strip() for chapter in fileInfo.split('Chapter') if chapter]
+try:
+    chapters = [chapter.strip() for chapter in fileInfo.split('Chapter') if chapter]
+except:
+    print("Недопустимые данные в файле")
+    exit()
 
-file = open(outputFileName, encoding='utf-8', mode='w')
+file = open(vihodnoi_file, encoding='utf-8', mode='w')
 file.write('Оглавление:\n')
 
 for i in chapters:

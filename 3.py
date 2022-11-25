@@ -1,7 +1,7 @@
 import os
 
-inputFileName = '3.txt'
-outputFileName = '3_3.txt'
+vhodnoi_file = '3.txt'
+vihodnoi_file = '3_3.txt'
 
 def transposeMatrix(matrix):
     transpMatrix = [[0 for j in range(len(matrix))] for i in range(len(matrix[0]))]
@@ -11,22 +11,26 @@ def transposeMatrix(matrix):
 
     return transpMatrix
 
-def checkFile(fileName):
-    if not (os.path.exists(fileName)):
-        print(f"Файла {fileName} не существует")
+def checkFile(file):
+    if not (os.path.exists(file)):
+        print(f"Файла {file} не существует")
         exit()
 
-checkFile(inputFileName)
-checkFile(outputFileName)
+checkFile(vhodnoi_file)
+checkFile(vihodnoi_file)
 
-with open(inputFileName, encoding = 'utf-8') as file:
+with open(vhodnoi_file, encoding = 'utf-8') as file:
     fileInfo = file.read()
 
 matrix = []
 
 for i in fileInfo.split('\n'):
     if len(i) > 0:
-        row = list(map(int, i.split(' ')))
+        try: 
+            row = list(map(int, i.split(' ')))
+        except:
+            print("Недопустимые данные в файле")
+            exit()
         matrix.append(row)
     else:
         print("Вы ввели некорректные данные. Перезапишите файл")
@@ -34,7 +38,7 @@ for i in fileInfo.split('\n'):
 
 newMatrix = transposeMatrix(matrix)
 
-file = open(outputFileName, encoding='utf-8', mode='w')
+file = open(vihodnoi_file, encoding='utf-8', mode='w')
 
 for row in newMatrix:
     for element in row:
