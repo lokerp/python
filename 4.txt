@@ -1,0 +1,40 @@
+Chapter 1
+Python
+
+Python is powerful... and fast;
+plays well with others;
+runs everywhere;
+is friendly & easy to learn;
+is Open.
+Chapter 2
+C
+C is a powerful general-purpose programming language. It can be used to develop software like operating systems, databases, compilers, and so on. C programming is an excellent language to learn to program for beginners.
+
+
+Chapter 3
+Java
+
+
+Java is a programming language and computing platform first released by Sun Microsystems in 1995. It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java, as well.
+
+Chapter 4
+JavaScript
+JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+Chapter 5
+SQL
+SQL is a standard language for accessing and manipulating databases.
+
+Chapter 6
+HTML
+
+
+HTML is the standard markup language for creating Web pages.
+HTML stands for Hyper Text Markup Language.
+Chapter 7
+TeX
+
+
+
+
+
+TeX is a typesetting language. Instead of visually formatting your text, you enter your manuscript text intertwined with TeX commands in a plain text file. You then run TeX to produce formatted output, such as a PDF file. Thus, in contrast to standard word processors, your document is a separate file that does not pretend to be a representation of the final typeset output, and so can be easily edited and manipulated.
